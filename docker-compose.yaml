@@ -1,0 +1,11 @@
+services:
+  angular-app:
+    build: .
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
